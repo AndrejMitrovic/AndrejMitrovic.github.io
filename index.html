@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more. -->
+  <!-- Note: <head> primarily holds information for machine processing, not human-readability. For human-visible information, like top-level headings and listed authors, see the <header> element. -->
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+
+    <!-- style sheet -->
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- custom font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- custom site icon -->
+    <link rel="icon" href="images/parking-logo.png">
+  </head>
+  <body>
+
+    <!-- insert some javascript, and defer it until the whole body has been read -->
+    <script src="scripts/main.js" defer></script>
+
+    <h1>Welcome to dynapark</h1>
+
+    <!-- this one has no content, it's an empty element -->
+    <!-- note that the empty element doesn't have a closing /img here -->
+    <!-- this is a URI reference, not a URI itself. It's a different type of URI. -->
+    <!-- See also: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier -->
+    <img src="images/parking-logo.png" alt="Parking logo">
+
+    <h3 id="my-id">This is the homepage of dynapark</h3>
+
+    <p class="my-class"><i>My cat is very grumpy</i></p>
+
+    <!-- can embed elements -->
+    <p><i>My cat is <strong>very</strong> grumpy</i></p>
+
+    <!-- can set custom attribute=value so we can target
+        this with CSS or whatever else processes it -->
+    <p my-attribute="my-value">This element has an attribute</p>
+
+    <p>At dynapark, we're a company of</p>
+
+    <ul>
+        <li>developers</li>
+        <li>managers</li>
+        <li>designers</li>
+    </ul>
+
+    <p>working together to build the future of parking.</p>
+
+    <p>We want to build:</p>
+
+    <ol>
+        <li>Dynamic pricing</li>
+        <li>Service discoverability</li>
+        <li>Visualized profits</li>
+        <li>Sustainable parking</li>
+    </ol>
+
+    <p>Click <a href="https://www.google.com/search?q=dynapark&oq=dynapark&aqs=chrome..69i57j69i60l5j69i65.1353j0j7&sourceid=chrome&ie=UTF-8">here</a> for more info.</p>
+
+    <button>Change user</button>
+
+  </body>
+</html>

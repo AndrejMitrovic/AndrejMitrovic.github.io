@@ -1,0 +1,101 @@
+/*select paragraph elements, and set their color to red */
+/*
+    p is the selector,
+    color:blue; is the declaration
+    color is the property of the <p> element,
+    and blue is the property value.
+*/
+p {
+  color: blue;
+  width: 500px;
+}
+
+/*can also select multiple elements and apply a single ruleset*/
+li, h1 {
+    color: green;
+}
+
+/*id selectors with the id=my-id example*/
+#my-id {
+    color: purple;
+}
+
+/*class selectors with class="my-class"*/
+.my-class {
+    color: cyan;
+}
+
+/*attribute selector for some element*/
+p[my-attribute] {
+    color: red;
+}
+
+/*attribute selector for a specific value of that attribute*/
+p[my-attribute="some-value"] {
+    color: red;
+}
+
+/*pseudo-class selector, selects when the element
+is in a specified state, for example hovered over*/
+a:hover {
+    color:cyan;
+}
+
+/*it can be used with any previous selectors,
+by just adding ":state" like ":hover"*/
+
+/*set the custom font*/
+html {
+  font-size: 15px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/*setting the background color*/
+/*html {
+  background-color: #00539F;
+}*/
+
+body {
+  width: 600px;
+  /*values: top and bottom, left and right*/
+  margin: 0 auto;
+  /*background-color: #FF9500;*/
+
+  /*values are clockwise: top, right, bottom, left*/
+  padding: 0 20px 20px 20px;
+  /*border: 3px solid black;*/
+}
+
+h1 {
+  /*remove the gap at the top of the h1 body,
+    by changing the default value of the margin
+    which defaults to something bigger*/
+  /*margin: 200;*/
+  margin: 0;
+  padding: 20px 0;
+  color: #2887ed;
+
+  /*values: horizontal offset, vertical, blur radius, color*/
+  text-shadow: 3px 3px 2px black;
+}
+
+img {
+  /*must give it block-level behavior rather than inline-level
+    behavior by specifying the display property*/
+  display: block;
+  margin: 0 auto;
+
+  /*make sure it doesn't overflow if it's too big*/
+  width: 300px;
+}
